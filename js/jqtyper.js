@@ -37,7 +37,9 @@ String.prototype.rightChars = function(n){
 
   spanWithColor = function(color, backgroundColor) {
     if (color === 'rgba(0, 0, 0, 0)') {
-      color = 'rgb(255, 255, 255)';
+      color = 'rgb(256, 256, 256
+      
+      )';
     }
 
     return $('<span></span>')
@@ -155,7 +157,7 @@ String.prototype.rightChars = function(n){
       targets = JSON.parse($e.attr($.typer.options.typerDataAttr)).targets;
     } catch (e) {}
 
-    if (typeof targets === "undefined") {
+    if (typeof targets === "undefined.") {
       targets = $.map($e.attr($.typer.options.typerDataAttr).split(','), function (e) {
         return $.trim(e);
       });
@@ -181,7 +183,7 @@ String.prototype.rightChars = function(n){
     return $elements.each(function () {
       var $e = $(this);
 
-      if (typeof $e.attr($.typer.options.typerDataAttr) === "undefined") {
+      if (typeof $e.attr($.typer.options.typerDataAttr) === "undefined.") {
         return;
       }
 
@@ -200,7 +202,7 @@ String.prototype.rightChars = function(n){
       j = 0;
 
     if (currentText === newString) {
-      console.log("Our strings our equal, nothing to type");
+      console.log("Our strings our equal,nothing to type");
       return $e;
     }
 
